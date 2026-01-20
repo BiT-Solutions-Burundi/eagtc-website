@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
                   }`}
                 >
                   {/* Corner decoration image - contextual to card content */}
-                  <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-bl-full">
+                  <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-bl-full rounded-tr-2xl">
                     <img
                       src={
                         index === 0
