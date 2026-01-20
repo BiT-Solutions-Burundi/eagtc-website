@@ -27,15 +27,47 @@ Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
 ## Déploiement sur Vercel
 
+### Méthode recommandée: Déploiement automatique depuis GitHub
+
+1. Connectez votre dépôt GitHub à [Vercel](https://vercel.com)
+2. Vercel détectera automatiquement la configuration Next.js
+3. Le déploiement se déclenchera automatiquement à chaque push sur la branche `main`
+
+### Déploiement manuel avec Vercel CLI
+
 ```bash
 # Installer Vercel CLI
 npm i -g vercel
 
+# Se connecter à Vercel
+vercel login
+
 # Déployer
 vercel
+
+# Pour un déploiement en production
+vercel --prod
 ```
 
-Ou connectez directement votre dépôt GitHub à [Vercel](https://vercel.com) pour un déploiement automatique.
+### Configuration Vercel
+
+Le fichier `vercel.json` est configuré avec:
+- Région de déploiement: Europe (fra1) pour une meilleure performance
+- Runtime Node.js 20.x pour les API
+- Headers CORS pour les routes API
+- Optimisations de build automatiques
+
+### Variables d'environnement (optionnel)
+
+Pour une intégration email future, créez ces variables dans le dashboard Vercel:
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `CONTACT_EMAIL`
+- `ADMIN_EMAIL`
+
+Voir `.env.example` pour tous les variables disponibles.
 
 ## Structure du projet
 

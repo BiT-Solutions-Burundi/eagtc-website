@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Stats from "@/components/Stats";
 import Services from "@/components/Services";
-import ClientPortfolio from "@/components/ClientPortfolio";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import CTASplit from "@/components/CTASplit";
 import Footer from "@/components/Footer";

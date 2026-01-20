@@ -65,7 +65,7 @@ export default function WhyChooseUs() {
 
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-8">
-              L'excellence au service de vos projets
+              L&apos;excellence au service de vos projets
             </h2>
 
             {/* Image - Industrial/electrical infrastructure work */}
