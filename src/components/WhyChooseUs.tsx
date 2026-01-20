@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
                   }`}
                 >
                   {/* Corner decoration image - contextual to card content */}
-                  <div className="absolute -top-2 -right-2 w-20 h-20 overflow-hidden" style={{ borderRadius: '0 16px 0 9999px' }}>
+                  <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden" style={{ borderRadius: '0 16px 0 9999px' }}>
                     <img
                       src={
                         index === 0

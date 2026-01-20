@@ -10,7 +10,7 @@ const services = [
     title: "Équipements de Télécommunication",
     description:
       "Fourniture d'antennes relais de télécommunication, équipements IT et infrastructures réseau. Solutions complètes pour opérateurs et entreprises.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1594915440248-1e419eba6611?q=80&w=2667&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
@@ -54,7 +54,7 @@ const services = [
     title: "Location d'Engins de Construction",
     description:
       "Location d'engins de construction et de travaux publics : pelleteuses, bulldozers, grues et camions. Maintenance et support technique inclus.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80",
+    image: "https://images.unsplash.com/photo-1584186118422-895ef18c418d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -62,7 +62,7 @@ const services = [
     ),
   },
   {
-    title: "Travaux de Construction & Électrification",
+    title: "BTP - Bâtiment et Travaux Publics",
     description:
       "Réalisation de travaux de construction et d’électrification, avec étude, fourniture, installation et mise en service des infrastructures.",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80",

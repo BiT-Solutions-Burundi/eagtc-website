@@ -31,7 +31,7 @@ export default function Footer({ onContactClick }: FooterProps) {
               <div className="flex gap-3">
                 <a
                   href="#"
-                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-primary hover:bg-accent-dark transition-colors"
+                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white hover:bg-accent-dark transition-colors"
                   aria-label="Facebook"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@ export default function Footer({ onContactClick }: FooterProps) {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-primary hover:bg-accent-dark transition-colors"
+                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white hover:bg-accent-dark transition-colors"
                   aria-label="Twitter"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -49,7 +49,7 @@ export default function Footer({ onContactClick }: FooterProps) {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-primary hover:bg-accent-dark transition-colors"
+                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white hover:bg-accent-dark transition-colors"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ export default function Footer({ onContactClick }: FooterProps) {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-primary hover:bg-accent-dark transition-colors"
+                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white hover:bg-accent-dark transition-colors"
                   aria-label="Instagram"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -67,7 +67,7 @@ export default function Footer({ onContactClick }: FooterProps) {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-primary hover:bg-accent-dark transition-colors"
+                  className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white hover:bg-accent-dark transition-colors"
                   aria-label="YouTube"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

@@ -65,9 +65,9 @@ export default function Hero({ onContactClick }: HeroProps) {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-48">
-        <div className="grid lg:grid-cols-1 gap-12 items-center">
+        <div className="grid lg:grid-cols-4 gap-12 items-center">
           {/* Left Content */}
-          <div className="text-white">
+          <div className="lg:col-span-3 text-white">
             {/* Welcome Badge */}
             <div className="inline-flex items-center gap-2 mb-6">
               <span className="text-2xl text-accent">👋</span>
@@ -77,12 +77,12 @@ export default function Hero({ onContactClick }: HeroProps) {
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6" style={{ fontSize: '47px' }}>
               {/* <span className="text-accent">East African General Trade Company</span> <span className="text-white/80">–</span>  */}
-              Solutions fiables d&apos;approvisionnement et services industriels en Afrique de l&apos;Est
+              Votre partenaire de confiance en supply chain et services industriels en Afrique de l&apos;Est.
             </h1>
 
             {/* Description */}
             <p className="text-lg text-white/80 mb-8 max-w-xl">
-              Entreprise établie depuis 2009 offrant expertise en commerce général, approvisionnement industriel, travaux techniques, telecom et services logistiques.
+              Entreprise établie depuis 2009 offrant expertise en commerce général, approvisionnement industriel, travaux techniques, télécommunications et services logistiques.
             </p>
 
             {/* CTA Buttons */}
@@ -115,7 +115,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           </div>
 
           {/* Right Form Card */}
-          {/* <div className="lg:justify-self-end w-full max-w-md">
+          {/* <div className="lg:col-span-1 lg:justify-self-end w-full max-w-md">
             <div className="bg-card-dark rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-white mb-6">Demande de devis</h3>
               

@@ -63,13 +63,13 @@ export default function Navbar({ onContactClick }: NavbarProps) {
             className="flex items-center"
           >
             <Image
-              src="/images/logo-full.svg"
-              // src={isScrolled ? "/images/logo-full.svg" : "/images/logo-white.svg"}
+              // src="/images/logo-full.svg"
+              src={isScrolled ? "/images/logo-full.svg" : "/images/logo-full-variant-white.svg"}
               alt="EAGTC - East African General Trade Company"
               width={160}
               height={45}
-              className={`h-10 w-auto transition-all duration-300`}
-              // className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-20'}`}
+              // className={`h-10 w-auto transition-all duration-300`}
+              className={`transition-all duration-300 ${isScrolled ? 'h-10' : 'h-30 w-56'}`}
               priority
             />
           </a>

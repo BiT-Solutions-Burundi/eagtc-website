@@ -33,7 +33,7 @@ export default function CTASplit({ onContactClick }: CTASplitProps) {
             Besoin de nos services ?
           </h3>
           <p className="text-primary/70 text-sm mb-4">
-            Contactez-nous pour discuter de vos besoins en commerce et logistique.
+            Contactez-nous pour discuter de vos besoins.
           </p>
           <button
             onClick={onContactClick}
