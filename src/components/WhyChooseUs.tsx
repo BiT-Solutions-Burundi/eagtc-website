@@ -93,12 +93,12 @@ export default function WhyChooseUs() {
               {features.map((feature, index) => (
                 <div
                   key={feature.title}
-                  className={`relative bg-white rounded-2xl p-6 card-shadow ${
+                  className={`relative bg-white rounded-2xl p-6 card-shadow overflow-hidden ${
                     index < 2 ? 'lg:mb-4' : 'lg:mt-4'
                   }`}
                 >
                   {/* Corner decoration image - contextual to card content */}
-                  <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-bl-full rounded-br-2xl">
+                  <div className="absolute -top-2 -right-2 w-20 h-20 overflow-hidden" style={{ borderRadius: '0 16px 0 9999px' }}>
                     <img
                       src={
                         index === 0
