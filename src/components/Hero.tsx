@@ -65,7 +65,7 @@ export default function Hero({ onContactClick }: HeroProps) {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-48">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-1 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white">
             {/* Welcome Badge */}
@@ -84,7 +84,7 @@ export default function Hero({ onContactClick }: HeroProps) {
 
             {/* Description */}
             <p className="text-lg text-white/80 mb-8 max-w-xl">
-              Entreprise établie depuis 2009 offrant expertise en commerce général, approvisionnement industriel, travaux techniques et services logistiques.
+              Entreprise établie depuis 2009 offrant expertise en commerce général, approvisionnement industriel, travaux techniques, telecom et services logistiques.
             </p>
 
             {/* CTA Buttons */}
@@ -117,7 +117,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           </div>
 
           {/* Right Form Card */}
-          <div className="lg:justify-self-end w-full max-w-md">
+          {/* <div className="lg:justify-self-end w-full max-w-md">
             <div className="bg-card-dark rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-bold text-white mb-6">Demande de devis</h3>
               
@@ -201,7 +201,7 @@ export default function Hero({ onContactClick }: HeroProps) {
                 </form>
               )}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
