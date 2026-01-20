@@ -70,9 +70,7 @@ export default function Hero({ onContactClick }: HeroProps) {
           <div className="text-white">
             {/* Welcome Badge */}
             <div className="inline-flex items-center gap-2 mb-6">
-              <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
-              </svg>
+              <span className="text-2xl text-accent">👋</span>
               <span className="text-white/80 text-sm">Bienvenue chez East African General Trade Company</span>
             </div>
 
