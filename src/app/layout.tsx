@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "EAGTC",
     title: "EAGTC | East African General Trade Company",
     description:
-      "Votre partenaire de confiance pour le commerce général, l'électrification et la construction au Burundi.",
+      "Votre partenaire de confiance en supply chain et services industriels en Afrique de l'Est.",
     images: [
       {
         url: "/images/logo-full.svg",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EAGTC | East African General Trade Company",
     description:
-      "Votre partenaire de confiance pour le commerce général, l'électrification et la construction au Burundi.",
+      "Votre partenaire de confiance en supply chain et services industriels en Afrique de l'Est.",
     images: ["/images/logo-full.svg"],
   },
   icons: {
