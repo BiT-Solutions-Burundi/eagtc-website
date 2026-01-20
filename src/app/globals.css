@@ -1,26 +1,180 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* EAGTC Brand Colors & Theme - Matching Reference Design */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Primary: Deep Navy Blue */
+  --color-primary: #0f2c59;
+  --color-primary-light: #1a3f7a;
+  --color-primary-dark: #0a1d3d;
+  
+  /* Accent: Gold */
+  --color-accent: #f5b801;
+  --color-accent-dark: #d4a001;
+  --color-accent-light: #ffd84d;
+  
+  /* Background: Warm Cream (matching reference) */
+  --color-cream: #faf8f5;
+  --color-cream-dark: #f5f3f0;
+  
+  /* Card backgrounds */
+  --color-card: #ffffff;
+  --color-card-dark: #1a1f2e;
+  
+  /* Text colors */
+  --color-foreground: #1a1a1a;
+  --color-muted: #666666;
+  --color-muted-light: #999999;
+  
+  /* Fonts */
+  --font-mono: var(--font-geist-mono), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Smooth scroll for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styles - Cream background */
+body {
+  background: var(--color-cream);
+  color: var(--color-foreground);
+  line-height: 1.6;
+}
+
+/* Apply Lalezar font to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-lalezar), system-ui, sans-serif;
+  font-weight: 400;
+}
+
+/* Ensure font applies to all form elements */
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Section badge styling */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-bottom: 12px;
+}
+
+.section-badge::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f5b801' viewBox='0 0 24 24'%3E%3Cpath d='M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Card shadows - subtle like reference */
+.card-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.card-shadow-hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Gold icon badge */
+.icon-badge {
+  width: 56px;
+  height: 56px;
+  background: var(--color-accent);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 12px rgba(245, 184, 1, 0.3);
+}
+
+/* Read more link styling */
+.read-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-accent-dark);
+  font-weight: 500;
+  font-size: 14px;
+  transition: gap 0.2s ease;
+}
+
+.read-more-link:hover {
+  gap: 10px;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Infinite scroll marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }

@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EAGTC - East African General Trade Company
 
-## Getting Started
+Site web corporate pour East African General Trade Company SPRL, une entreprise burundaise spécialisée dans le commerce général, l'électrification, les énergies renouvelables et la construction.
 
-First, run the development server:
+## Technologies
+
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **React Hook Form** + **Zod** pour la validation des formulaires
+
+## Installation
 
 ```bash
+# Cloner le projet
+git clone <repository-url>
+cd eagtc
+
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Déploiement sur Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Installer Vercel CLI
+npm i -g vercel
 
-## Learn More
+# Déployer
+vercel
+```
 
-To learn more about Next.js, take a look at the following resources:
+Ou connectez directement votre dépôt GitHub à [Vercel](https://vercel.com) pour un déploiement automatique.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Structure du projet
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── layout.tsx          # Layout racine avec métadonnées
+│   ├── page.tsx            # Page principale
+│   ├── globals.css         # Styles Tailwind + thème
+│   └── api/contact/        # API de contact
+├── components/
+│   ├── Navbar.tsx          # Navigation avec ancres
+│   ├── Hero.tsx            # Section héro
+│   ├── Stats.tsx           # Statistiques animées
+│   ├── About.tsx           # À propos
+│   ├── Services.tsx        # Grille de services
+│   ├── Projects.tsx        # Carrousel de projets
+│   ├── CTABanner.tsx       # Bannière d'appel à l'action
+│   ├── Footer.tsx          # Pied de page
+│   └── ContactModal.tsx    # Modal de contact
+└── public/images/          # Images du site
+```
 
-## Deploy on Vercel
+## Images requises
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Placer les images suivantes dans `/public/images/`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `hero-tanganyika.webp` - Image de fond pour le héro (lac Tanganyika)
+- `vision-building.webp` - Photo du siège social
+- `electricity-work.webp` - Travaux d'électrification
+- `construction.webp` - Travaux de construction
+- `logistics.webp` - Logistique/import-export
+
+## Contact
+
+- **Entreprise**: East African General Trade Company SPRL
+- **CEO**: Déo RUKERANDANGA
+- **Téléphone**: +257 69 780 222
+- **Email**: deo.rukerandanga@eagtc.bi
+- **Adresse**: Vision Building, Chaussée de l'Agriculture n°5, Quartier Industriel, Bujumbura, Burundi
+
+## Licence
+
+© 2025 East African General Trade Company SPRL. Tous droits réservés.
