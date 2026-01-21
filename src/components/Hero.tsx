@@ -204,7 +204,7 @@ export default function Hero({ onContactClick }: HeroProps) {
       </div>
 
       {/* Client Logos Section - Full Width */}
-      <div className="absolute bottom-0 left-0 right-0 w-full py-6 backdrop-blur-xs bg-black/20">
+      <div id="portfolio" className="absolute bottom-0 left-0 right-0 w-full py-6 backdrop-blur-xs bg-black/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
           <h3 className="text-white text-left text-xl sm:text-2xl mb-6">
